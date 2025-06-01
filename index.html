@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>After-Trek Junio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      color: #333;
+    }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1508264165352-258a6c48b345');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .section {
+      background: #f0f4f8;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .section p {
+      margin-bottom: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #2e7d32;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #1b5e20;
+    }
+    form {
+      background: #f0f4f8;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 3rem;
+    }
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    form button {
+      background-color: #2e7d32;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #1b5e20;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      padding: 2rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>After-Trek Junio</h1>
+    <p>Una experiencia en la sierra cordobesa – 14 de junio 2025</p>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>⛰️ Trekking + After en Las Maravillas</h2>
+      <p>Disfrutá una caminata guiada de entre 1h y 1h30m por senderos únicos en San Lorenzo, Córdoba. Al regresar, relajate en el after con <strong>DJ set de Nicolás Zazu</strong>, bebidas frías y menú serrano gourmet.</p>
+    </section>
+
+    <section class="section">
+      <h2>★ Promo Full (Ingreso + Trekking + Comida + Bebida)</h2>
+      <p>Incluye el acceso al predio, sendero guiado, 1 sándwich a elección (bondiola o provoleta), 1 bebida (vino, cerveza o gaseosa).</p>
+      <a href="https://mpago.la/1xZBSwr" class="btn" target="_blank">Comprar Promo Full</a>
+    </section>
+
+    <section class="section">
+      <h2>🍽️ Promo Food & Drink</h2>
+      <p>Ideal para quienes se suman después del trekking. Incluye 1 sándwich a elección y 1 bebida.</p>
+      <a href="https://mpago.la/29sLucf" class="btn" target="_blank">Comprar Promo Food & Drink</a>
+    </section>
+
+    <section class="section">
+      <h2>🍻 Venta Libre</h2>
+      <p>Accedé sin promo previa y elegí lo que quieras consumir del menú: bebidas, vino, cerveza artesanal y sándwiches serranos.</p>
+      <a href="https://mpago.la/29sLucf" class="btn" target="_blank">Ver opciones y pagar</a>
+    </section>
+
+    <form action="https://formsubmit.co/info.nativaoutdoor@gmail.com" method="POST" enctype="multipart/form-data">
+      <h2>📝 Confirmá tu inscripción</h2>
+      <label for="nombre">Nombre y Apellido</label>
+      <input type="text" name="nombre" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" required>
+
+      <label for="opcion">Opción adquirida</label>
+      <select name="opcion" required>
+        <option value="Promo Full">Promo Full</option>
+        <option value="Food & Drink">Food & Drink</option>
+        <option value="Venta Libre">Venta Libre</option>
+      </select>
+
+      <label for="comprobante">Subí tu comprobante de pago</label>
+      <input type="file" name="comprobante" accept="image/*,application/pdf" required>
+
+      <label for="comentarios">Comentarios (opcional)</label>
+      <textarea name="comentarios" rows="4"></textarea>
+
+      <button type="submit">Enviar confirmación</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Organiza Nativa Outdoor x Caminá por Córdoba · Todos los derechos reservados · After-Trek 2025</p>
+  </footer>
+</body>
+</html>
